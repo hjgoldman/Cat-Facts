@@ -11,19 +11,20 @@ import Kingfisher
 import CoreData
 
 class CatDetailViewController: UIViewController {
+    
+    var managedObjectContext :NSManagedObjectContext!
+    var cat = Cat()
 
     @IBOutlet weak var catImageView: UIImageView!
     @IBOutlet weak var catFactLabel: UILabel!
-    
-    var cat = CatClass()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         self.catFactLabel.text = self.cat.fact
-        self.catImageView.kf.setImage(with: URL(string: self.cat.catImageUrl))
+        self.catImageView.kf.setImage(with: URL(string: self.cat.imageUrl!))
         
     }
     

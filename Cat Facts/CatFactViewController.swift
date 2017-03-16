@@ -17,11 +17,10 @@ class CatFactViewController: UIViewController {
     @IBOutlet weak var factLabel: UILabel!
     var catFactText :String!
     var catImageUrl :String!
-    var cats = [CatClass]()
     
     //Core Data Stuff
     var managedObjectContext :NSManagedObjectContext!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -68,10 +67,11 @@ class CatFactViewController: UIViewController {
     //Adds current cat fact into catFacts array
     @IBAction func saveFactButtonPressed(_ sender: Any){
         
-        let cat = CatClass()
+        let cat = Cat(context: self.managedObjectContext)
         cat.fact = self.catFactText
-        cat.catImageUrl = self.catImageUrl
-        self.cats.append(cat)
+        cat.imageUrl = self.catImageUrl
+        
+        try! self.managedObjectContext.save()
     }
     
     //segue
@@ -79,7 +79,8 @@ class CatFactViewController: UIViewController {
         if segue.identifier == "ShowSavedFacts" {
             
             let savedFactsTVC = segue.destination as! SavedFactsTableViewController
-            savedFactsTVC.cats = self.cats
+            savedFactsTVC.managedObjectContext = self.managedObjectContext
+            
             
         }
         

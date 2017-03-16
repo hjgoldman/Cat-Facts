@@ -13,7 +13,6 @@
 		C65934991E7AFA84001A508E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65934971E7AFA84001A508E /* Main.storyboard */; };
 		C659349B1E7AFA84001A508E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C659349A1E7AFA84001A508E /* Assets.xcassets */; };
 		C659349E1E7AFA84001A508E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C659349C1E7AFA84001A508E /* LaunchScreen.storyboard */; };
-		C65934A61E7AFB65001A508E /* CatClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65934A51E7AFB65001A508E /* CatClass.swift */; };
 		C65934A81E7B0932001A508E /* SavedFactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65934A71E7B0932001A508E /* SavedFactsTableViewController.swift */; };
 		C65934AA1E7B13A1001A508E /* CatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65934A91E7B13A1001A508E /* CatDetailViewController.swift */; };
 		C65934AD1E7B1B8C001A508E /* CatDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C65934AB1E7B1B8C001A508E /* CatDataModel.xcdatamodeld */; };
@@ -29,7 +28,6 @@
 		C659349A1E7AFA84001A508E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C659349D1E7AFA84001A508E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C659349F1E7AFA84001A508E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C65934A51E7AFB65001A508E /* CatClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatClass.swift; sourceTree = "<group>"; };
 		C65934A71E7B0932001A508E /* SavedFactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedFactsTableViewController.swift; sourceTree = "<group>"; };
 		C65934A91E7B13A1001A508E /* CatDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatDetailViewController.swift; sourceTree = "<group>"; };
 		C65934AC1E7B1B8C001A508E /* CatDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CatDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 			children = (
 				C65934931E7AFA84001A508E /* AppDelegate.swift */,
 				C65934AE1E7B1D6A001A508E /* ViewControllers */,
-				C65934A51E7AFB65001A508E /* CatClass.swift */,
 				C65934971E7AFA84001A508E /* Main.storyboard */,
 				C659349A1E7AFA84001A508E /* Assets.xcassets */,
 				C659349C1E7AFA84001A508E /* LaunchScreen.storyboard */,
@@ -237,7 +234,6 @@
 				C65934A81E7B0932001A508E /* SavedFactsTableViewController.swift in Sources */,
 				C65934AA1E7B13A1001A508E /* CatDetailViewController.swift in Sources */,
 				C65934941E7AFA84001A508E /* AppDelegate.swift in Sources */,
-				C65934A61E7AFB65001A508E /* CatClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
